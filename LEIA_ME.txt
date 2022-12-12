@@ -44,7 +44,7 @@
   
   gulp build
   
-  gulp bunde --ship
+  gulp bundle --ship
   
   gulp package-solution --ship
 
