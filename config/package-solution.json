@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ramais-bel-client-side-solution",
+    "id": "093d828e-ae41-455e-a72d-19e3972a7558",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.16.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "RamaisBel description"
+      },
+      "longDescription": {
+        "default": "RamaisBel description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ramais-bel Feature",
+        "description": "The feature that activates elements of the ramais-bel solution.",
+        "id": "05a103a8-b043-4ff9-9455-b59f71cebb4d",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ramais-bel.sppkg"
+  }
+}

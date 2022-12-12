@@ -1,0 +1,205 @@
+.container {
+    font-family: Verdana;
+    background-color: white;
+    padding: 0.5%;
+}
+
+.table-share {
+    width: 100%;
+    border: 0px;
+    border-spacing: 0px;
+}
+
+
+
+
+tbody {
+    padding: 1%;
+}
+
+tr {
+    height: 5vh !important;
+    box-shadow: 1px 1px 1px lightgrey !important;
+}
+
+
+td,
+th {
+    padding: 1%;
+    text-align: left;
+}
+
+
+
+.bg-gray {
+    background-color: rgb(248, 246, 246) !important;
+
+}
+
+thead>tr>th:nth-child(1) {
+    width: 20%;
+}
+
+thead>tr>th:nth-child(2) {
+    width: 25%;
+}
+
+thead>tr>th:nth-child(3) {
+    width: 25%;
+}
+
+thead>tr>th:nth-child(4) {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.titlePage,
+.fonte {
+    text-align: center;
+}
+
+.titlePage {
+    margin-bottom: 1px !important;
+    font-size: 2vw;
+}
+
+
+
+.connected {
+    color: green;
+}
+
+.desconnected {
+    color: red;
+}
+
+.accessDenied {
+    padding: 1%;
+    width: 100%;
+    background-color: rgb(248, 246, 246);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.deniedIcon {
+    font-size: 80px;
+    line-height: 100px;
+    color: red;
+}
+
+
+
+.loadInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.loadIcon {
+    color: #150958;
+    font-size: 35px;
+    animation: spin 0.9s infinite linear;
+    margin: 0 2%;
+}
+
+@keyframes spin {
+
+    from {
+        transform: rotateZ(0deg);
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+
+}
+
+
+.cutom-input {
+    width: 60%;
+    height: 5vh;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 0 1%;
+}
+
+
+.containerFilter {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2% !important;
+}
+
+.containerFilter>span {
+    margin: 0 1%;
+    width: 40%;
+
+}
+
+
+.result-none {
+    text-align: center;
+}
+
+.scrollable-div {
+    max-height: 70vh;
+    min-height: 70vh;
+    overflow-y: auto;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgb(248, 246, 246);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #150958;
+    border-radius: 30px;
+
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #220f8f;
+}
+
+.icon-status {
+    font-size: 20px;
+}
+
+
+.free {
+    color: #228B22;
+}
+
+.not-allowed {
+    color: red;
+}
+
+.not-free {
+    color: #483D8B;
+}
+
+.receiving-call {
+    color: #1E90FF;
+}
