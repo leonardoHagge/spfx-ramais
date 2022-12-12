@@ -8,6 +8,7 @@ interface Ramal {
   filas: string;
   ramal: number;
   status: string;
+  teste?: boolean;
 }
 
 export default function RamaisBel() {
