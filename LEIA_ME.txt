@@ -1,0 +1,58 @@
+<----------------------------------------------------------------------- STEPS ----------------------------------------------------------------------->
+
+1°Instale o node.js a versão precisa ser >= 16 && <= 17, 
+  se não o Share Point FrameWork não irá funcionar.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2° Com o node.js já instalado execute os comandos abaixo para instalar as Liibs necessarias.
+
+  npm install -g yo gulp
+
+  npm install -g @microsoft/generator-sharepoint
+
+  npm install @fluentui/react
+
+  Link de apoio: https://www.youtube.com/watch?v=jt41I-2M1SU&list=PLiwjOtI_zamOeNuCjLx2AhXqwS824450M&index=1
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3° Abra o arquivo com o nome 'spfx-ramais-bel' no Visual Studio Code, e faça a subsitituição das sintaxes abaixo.
+
+  a) Em config/serve.json na linha 5 substitua 'https://seudominio.sharepoint.com' pelo endereço raiz do seu SharePoint.
+
+  b) Em src\webparts\ramaisbel\components\RamaisBel.tsx subsititua na linha 89 o endereço de API 'https://SUA_API_RAMAIS' para o endereço da sua API, não se equece de alterar para 'http:' caso sua API não tenha SSL.
+  
+  c) No mesmo arquivo da alteração acima substitua na linha 93 as palavraS 'USER_API' e 'PASSWORD_API' pelo seu usuario de api e a senha do mesmo respectivamente, muito cuidadO para não remover o ':'.
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4° Após realizar a substituições acima, no Visual Studio abra o CMD e execute o comando a seguir:
+
+   gulp serve
+
+
+   (este comando irá compilar seu arquivo, e se o endereço informado no 'serve.json' estiver correto irá abrir uma janela no seu navegador apontando para seu endereço no share point)
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5° Para fazer o deploy do projeto, execute os comandos abaixo, na ordem em que estam destacados.
+
+  gulp clean
+  
+  gulp build
+  
+  gulp bunde --ship
+  
+  gulp package-solution --ship
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6° Depois, de executar os comando você encontrará o arquivo a ser importado no sharepoint na pasta '~\spfx-ramais-bel\sharepoint\solution' com o nome de 'ramais-bel.sppkg'.
+
+
+
+   
